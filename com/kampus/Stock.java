@@ -27,8 +27,6 @@ public class Stock {
     public static void main(String[] args) {
         stock blackRock = new stock("ORCL", "Oracle Corporation", 34.5, 34.35);
 
-        
-
         blackRock.display();
     }
     
