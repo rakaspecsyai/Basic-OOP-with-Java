@@ -13,6 +13,14 @@ class stock{
         this.currentPrice = currentPrice;
     }
 
+    void getName(){
+        System.out.println(this.name);
+    }
+
+    void getSymbol(){
+        System.out.println(this.symbol);
+    }
+
     double getChangePercent(){
         return (this.currentPrice - this.previousClosingPrice)/this.previousClosingPrice * 100;
     }
@@ -28,6 +36,8 @@ public class Stock {
         stock blackRock = new stock("ORCL", "Oracle Corporation", 34.5, 34.35);
 
         blackRock.display();
+        blackRock.getName();
+        blackRock.getSymbol();
     }
     
 }
