@@ -34,7 +34,7 @@ class QuadraticEquation {
     }   
 
     double getRoot2(){
-        if(this.getDiscriminant() > 0){
+        if(this.getDiscriminant() >= 0){
             return (-this.b - Math.pow(this.getDiscriminant(), 0.5))/2 * this.a;
         }
         return 0;
