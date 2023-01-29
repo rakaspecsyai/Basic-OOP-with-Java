@@ -27,7 +27,7 @@ class QuadraticEquation {
 
     double getRoot1(){
         if (this.getDiscriminant() >= 0){
-            return (-this.b + Math.pow(this.getDiscriminant(), 0.5))/2 * this.a;
+            return (-this.b + Math.pow(this.getDiscriminant(), 0.5))/(2 * this.a);
 
         }
         return 0;
@@ -35,7 +35,7 @@ class QuadraticEquation {
 
     double getRoot2(){
         if(this.getDiscriminant() >= 0){
-            return (-this.b - Math.pow(this.getDiscriminant(), 0.5))/2 * this.a;
+            return (-this.b - Math.pow(this.getDiscriminant(), 0.5))/(2 * this.a);
         }
         return 0;
     }
