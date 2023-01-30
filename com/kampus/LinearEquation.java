@@ -1,6 +1,4 @@
 package com.kampus;
-import java.util.Scanner;
-
 
 class LinearEquation{
     private double a, b, c, d , e, f;
@@ -30,7 +28,7 @@ class LinearEquation{
         return d;
     }
 
-     double getE() {
+    double getE() {
         return e;
     }
 
@@ -51,25 +49,30 @@ class LinearEquation{
     }
 
     void display(){
-        
+        if(isSolvable()){
+            System.out.printf("(x, y) = (%.1f, %.1f)", getX(), getY());
+        }
+        else{
+            System.out.println("These equations have no solutions.");
+        }
     }
 }
 
 
 
- class Main {
-     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        double a = input.nextDouble();
-        double b = input.nextDouble();
-        double c = input.nextDouble();
-        double d = input.nextDouble();
-        double e = input.nextDouble();
-        double f = input.nextDouble();
-        input.close();
+//  class Main {
+//      public static void main(String[] args) {
+//         Scanner input = new Scanner(System.in);
+//         double a = input.nextDouble();
+//         double b = input.nextDouble();
+//         double c = input.nextDouble();
+//         double d = input.nextDouble();
+//         double e = input.nextDouble();
+//         double f = input.nextDouble();
+//         input.close();
 
-        LinearEquation persamaan1 = new LinearEquation(a, b, c, d, e, f);
-        persamaan1.display();
+//         LinearEquation persamaan1 = new LinearEquation(a, b, c, d, e, f);
+//         persamaan1.display();
         
-    }
-}
+//     }
+// }
