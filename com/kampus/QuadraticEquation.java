@@ -40,15 +40,18 @@ class QuadraticEquation {
         return 0;
     }
 
+    void display(){
+        System.out.println("Discriminant: " + this.getDiscriminant());
+        System.out.println("Root 1: " + this.getRoot1());
+        System.out.println("Root 2: " + this.getRoot2());
+
+    }
+
     public static void main(String[] args) {
         QuadraticEquation persamaan1 = new QuadraticEquation(1, 4, 4);
-        System.out.println("Discriminant: " + persamaan1.getDiscriminant());
-        System.out.println("Root 1: " + persamaan1.getRoot1());
-        System.out.println("Root 2: " + persamaan1.getRoot2());
+        persamaan1.display();
 
         QuadraticEquation persamaan2 = new QuadraticEquation(1, -2, 4);
-        System.out.println("Discriminant: " + persamaan2.getDiscriminant());
-        System.out.println("Root 1: " + persamaan2.getRoot1());
-        System.out.println("Root 2: " + persamaan2.getRoot2());
+        persamaan2.display();
     }
 }
