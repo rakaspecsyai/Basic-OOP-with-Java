@@ -35,7 +35,6 @@ class intersection {
             System.out.println("These lines don't intersect.");
         }
     }
-    private kipas[] a;
 }
 
 class Main{
