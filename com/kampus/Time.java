@@ -4,9 +4,9 @@ public class Time{
     private long hour, minute, second;
 
     Time(){
-        this.hour = System.currentTimeMillis()/1000/60/60;
-        this.minute = System.currentTimeMillis()/1000/60;
-        this.second = System.currentTimeMillis()/1000;
+        this.hour = (System.currentTimeMillis()/1000/60/60) % 24;
+        this.minute = (System.currentTimeMillis()/1000/60) % 60;
+        this.second = (System.currentTimeMillis()/1000) % 60;
     }
 
     Time(long elapsed){
