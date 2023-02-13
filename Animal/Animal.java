@@ -1,10 +1,14 @@
 package Animal;
-interface Animal{
-    void makeSound();
-    void printInfo();
+class Animal{
+    void makeSound(){
+
+    };
+    void printInfo(){
+        
+    };
 }
 
-class Dog implements Animal{
+class Dog extends Animal{
     String name;
     int age;
 
@@ -23,7 +27,7 @@ class Dog implements Animal{
     }
 }
 
-class Cat implements Animal{
+class Cat extends Animal{
     String name;
     int age;
     
