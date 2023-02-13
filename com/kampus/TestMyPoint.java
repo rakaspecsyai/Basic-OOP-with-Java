@@ -1,6 +1,5 @@
 package com.kampus;
-
-public class TestMyPoint {
+class TestMyPoint {
     public static void main(String[] args) {
         MyPoint p1 = new MyPoint();
         MyPoint p2 = new MyPoint(10, 30.5);
