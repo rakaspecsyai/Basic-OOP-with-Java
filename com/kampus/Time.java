@@ -10,9 +10,9 @@ public class Time{
     }
 
     Time(long elapsed){
-        this.hour = elapsed/1000/60/60;
-        this.minute = elapsed/1000/60;
-        this.second = elapsed/1000;
+        this.hour = (elapsed/1000/60/60) % 24;
+        this.minute = (elapsed/1000/60) % 60;
+        this.second = (elapsed/1000) % 60;
     }
 
     Time(long hour, long minute, long second) {
@@ -34,9 +34,9 @@ public class Time{
     }
 
     void setTime(long elapseTime){
-        this.hour = elapseTime/1000/60/60;
-        this.minute = elapseTime/1000/60;
-        this.second = elapseTime/1000;
+        this.hour = (elapseTime/1000/60/60) % 24;
+        this.minute = (elapseTime/1000/60) % 60;
+        this.second = (elapseTime/1000) % 60;
     }
 
     void display(){
