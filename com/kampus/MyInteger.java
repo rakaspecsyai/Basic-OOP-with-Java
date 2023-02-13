@@ -129,6 +129,19 @@ package com.kampus;
 
 class TestInteger{
     public static void main(String[] args) {
-        
+        MyInteger num1 = new MyInteger(12);
+        System.out.println(num1.equals(12));
+        System.out.println(num1.equals(21));
+
+        MyInteger num2 = new MyInteger(0);
+        System.out.println(num2.equals(num1));
+
+        System.out.println(num2.isEven());
+        System.out.println(num1.isOdd());
+        System.out.println(num2.isPrime());
+        System.out.println(num2.isPrime());
+        System.out.println(MyInteger.parseInt("12"));
+
+
     }
 }
