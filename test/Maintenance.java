@@ -2,11 +2,10 @@ package test;
 
 public class Maintenance {
     public static void main(String[] args) {
-        getInfo("Raka");
-        
-    }
+        char[] x = {'a', 'b', 'c'};
 
-    static void getInfo(String name){
-        System.out.println(name);
+        String y = String.valueOf(x);
+        System.out.println(y);
+        
     }
 }
